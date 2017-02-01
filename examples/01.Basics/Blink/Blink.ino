@@ -1,16 +1,22 @@
 /*
- * Blink
- * Turns on the onboard LED on for one second, then off for one second, repeatedly.
- * This uses delay() to pause between LED toggles.
- */
-
-void setup() {
-  pinMode(BUILTIN_LED, OUTPUT);  // initialize onboard LED as output
+Adafruit Arduino - Lesson 10. Pseudo Thermin
+*/
+ 
+int speakerPin = 12; /* D6 */
+int photocellPin = 0;
+ 
+void setup()
+{
+  // We'll send debugging information via the Serial monitor
+  Serial.begin(9600);   
 }
+ 
+void loop()
+{
+ int reading = analogRead(photocellPin);
+ Serial.print("Analog reading = ");
+ Serial.println(reading);     // the raw analog reading
 
-void loop() {
-  digitalWrite(BUILTIN_LED, HIGH);  // turn on LED with voltage HIGH
-  delay(1000);                      // wait one second
-  digitalWrite(BUILTIN_LED, LOW);   // turn off LED with voltage LOW
-  delay(1000);                      // wait one second
+ int pitch = 200 + reading / 4;
+ tone(speakerPin, pitch);
 }

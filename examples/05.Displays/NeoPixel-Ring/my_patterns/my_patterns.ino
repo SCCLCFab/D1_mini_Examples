@@ -31,7 +31,7 @@
 //   NEO_KHZ800  800 KHz bitstream for High Density LED strip (NeoPixel Stick)
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(NUM_PIXELS, DIN_PIN, NEO_GRB + NEO_KHZ800);
 
-int pause = 1000;
+int pause = 1;
 
 void setup() {
   Serial.begin(9600);
@@ -42,9 +42,9 @@ void setup() {
 
 void loop() {
   Serial.println("Basic colors");
-  basicColors(50);
+//  basicColors(1000);
 
-/*
+
   Serial.println("Color Wipe Red");
   colorWipe(strip.Color(255, 0, 0), 50);
   delay(pause);
@@ -108,7 +108,7 @@ void loop() {
   Serial.println("Theater Chase Rainbow");
   theaterChaseRainbow(50);
   delay(pause);
-*/
+
 }
 
 // Turn all the colors R, then G, then B
