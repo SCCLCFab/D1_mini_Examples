@@ -17,7 +17,7 @@ void loop()
  Serial.print("Analog reading = ");
  Serial.println(reading);     // the raw analog reading
 
- int pitch = 200 + reading / 4;
+ int pitch = 200 + reading / 2;
  tone(speakerPin, pitch);
 }
 

@@ -42,9 +42,9 @@ void setup() {
 
 void loop() {
   Serial.println("Basic colors");
-  basicColors(50);
+//  basicColors(50);
 
-/*
+
   Serial.println("Color Wipe Red");
   colorWipe(strip.Color(255, 0, 0), 50);
   delay(pause);
@@ -84,7 +84,7 @@ void loop() {
   Serial.println("Theater Chase Green");
   theaterChase(strip.Color(0, 127, 0), 50);
   delay(pause);
-
+/*
   Serial.println("Theater Chase Blue");
   theaterChase(strip.Color(0, 0, 127), 50);
   delay(pause);
