@@ -14,6 +14,7 @@
  *
  * Dependencies:
  * https://github.com/adafruit/Adafruit_NeoPixel
+ * Hi!
  */
 
 #include <Adafruit_NeoPixel.h>
