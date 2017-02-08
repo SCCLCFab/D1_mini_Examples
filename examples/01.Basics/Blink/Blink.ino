@@ -5,12 +5,12 @@
  */
 
 void setup() {
-  pinMode(BUILTIN_LED, OUTPUT);  // initialize onboard LED as output
+  pinMode(D6, OUTPUT);  // initialize onboard LED as output
 }
 
 void loop() {
-  digitalWrite(BUILTIN_LED, HIGH);  // turn on LED with voltage HIGH
+  digitalWrite(D6, HIGH);  // turn on LED with voltage HIGH
   delay(1000);                      // wait one second
-  digitalWrite(BUILTIN_LED, LOW);   // turn off LED with voltage LOW
+  digitalWrite(D6, LOW);   // turn off LED with voltage LOW
   delay(1000);                      // wait one second
 }
