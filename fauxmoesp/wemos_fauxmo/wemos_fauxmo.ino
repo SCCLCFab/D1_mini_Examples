@@ -39,7 +39,7 @@ void callback(unsigned char device_id, const char * device_name, bool state) {
   Serial.print("Device "); Serial.print(device_name); 
   Serial.print(" state: ");
 
-  if ( (strcmp(device_name, "light one") == 0) ) {
+  if ( (strcmp(device_name, "WOOF") == 0) ) {
     // adjust the relay immediately!
     if (state) {
       digitalWrite(RELAY_PIN1, LOW);
@@ -50,7 +50,7 @@ void callback(unsigned char device_id, const char * device_name, bool state) {
     }
   }
 
-  if ( (strcmp(device_name, "light two") == 0) ) {
+  if ( (strcmp(device_name, "MEOW") == 0) ) {
     // adjust the relay immediately!
     if (state) {
       digitalWrite(RELAY_PIN2, HIGH);
@@ -79,8 +79,8 @@ void setup() {
     wifiSetup();
  
     // Fauxmo v2.0
-    fauxmo.addDevice("light one");
-    fauxmo.addDevice("light two");
+    fauxmo.addDevice("WOOF");
+    fauxmo.addDevice("MEOW");
     fauxmo.onMessage(callback);
 }
  

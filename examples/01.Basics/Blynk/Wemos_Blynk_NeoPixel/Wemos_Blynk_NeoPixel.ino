@@ -33,12 +33,12 @@
 // You should get Auth Token in the Blynk App.
 // Go to the Project Settings (nut icon).
 // MCL: token for esptest with ESP8266
-char auth[] = "d3664a568faa4f90bdfae9684519919a";
+char auth[] = "02a9fbcb61b6447aa5805707a3cebe05";
 
 // Your WiFi credentials.
 // Set password to "" for open networks.
-char ssid[] = "CEREBRO_GUEST";
-char pass[] = "17flyonWater";
+char ssid[] = "SCCLC Guest";
+char pass[] = "";
 
 // NeoPixel stick DIN pin
 #define DIN_PIN D2
