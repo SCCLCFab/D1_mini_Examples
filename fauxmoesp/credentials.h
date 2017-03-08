@@ -1,2 +1,2 @@
-#define WIFI_SSID “SCCLC Guest”
-#define WIFI_PASS ""
+#define WIFI_SSID “SCCLC”
+#define WIFI_PASS "Learning is fun!"
