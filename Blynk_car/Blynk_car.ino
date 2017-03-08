@@ -47,7 +47,7 @@
 
 //********************* COMPLETE WITH YOUR DETAILS *************
 // Get Auth Token in the Blynk App.
-char auth[] = "8d459f8f40964994954a0d2fa4972e63";  // on Android for iot car project
+char auth[] = "c1e204f1c7f746cc867610400b470456";  // on Android for iot car project
 //char cloudserver[16] = "blynk-cloud.com";
 //char localserver[16] = "xxx.xxx.xxx.xxx";  // IP details for the local server.
 char ssid[] = "SCCLC Guest";               // Your WiFi credentials.
