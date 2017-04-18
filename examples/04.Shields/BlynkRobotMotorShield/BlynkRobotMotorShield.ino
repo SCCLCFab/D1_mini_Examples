@@ -11,7 +11,7 @@ char cloudserver[16] = "blynk-cloud.com";
 // You should get Auth Token in the Blynk App.
 // Go to the Project Settings (nut icon).
 // MCL: token for esptest with ESP8266
-char auth[] = "";
+char auth[] = "045fafca4d5d4a16a4c698ed3f18ae13";
 
 // Your WiFi credentials.
 // Set password to "" for open networks.

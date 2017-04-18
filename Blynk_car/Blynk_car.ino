@@ -47,7 +47,7 @@
 
 //********************* COMPLETE WITH YOUR DETAILS *************
 // Get Auth Token in the Blynk App.
-char auth[] = "8d459f8f40964994954a0d2fa4972e63";  // on Android for iot car project
+char auth[] = "045fafca4d5d4a16a4c698ed3f18ae13";  // on Android for iot car project
 //char cloudserver[16] = "blynk-cloud.com";
 //char localserver[16] = "xxx.xxx.xxx.xxx";  // IP details for the local server.
 char ssid[] = "SCCLC Guest";               // Your WiFi credentials.
@@ -61,7 +61,7 @@ int motorB ; // power level to motor B
 int X=0;
 int Y=0;
 int factor=0; // Variable to reduce speed of the motorA or B and turn.
-int maximo=70;
+int maximo=100;
 
 //Motor shiled I2C Address: 0x30
 //PWM frequency: 1000Hz(1kHz)
