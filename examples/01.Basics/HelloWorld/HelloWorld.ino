@@ -9,6 +9,6 @@ void setup() {
 }
 
 void loop() {
-  Serial.println("Hello World.");
-  delay(2000);
+  Serial.println("i have choo choo in my poo poo.");
+  delay(1);
 }
