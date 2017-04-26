@@ -6,15 +6,15 @@
  * pullup resistors needed to make this work.
  */
 
-int inputPin = D6;  // pushbutton connected to digital pin D3
+int inputPin = D3;  // pushbutton connected to digital pin D3
 int val = 0;        // variable to store the read value
 
 void setup() {
-  pinMode(D5, OUTPUT);  // set onboard LED as output
+  pinMode(D6, OUTPUT);  // set onboard LED as output
   pinMode(inputPin, INPUT);      // set pin as input
 }
 
 void loop() {
   val = digitalRead(inputPin);     // read the input pin
-  digitalWrite(D5, val);  // sets the LED to the button's value
+  digitalWrite(D6, val);  // sets the LED to the button's value
 }

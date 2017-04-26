@@ -16,7 +16,7 @@ void loop(void) {
  
   Serial.print("Analog reading = ");
   Serial.println(photocellReading);     // the raw analog reading
- 
+  tone(12, photocellReading);
   delay(100);
 }
 

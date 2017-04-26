@@ -36,6 +36,7 @@ int pause = 1000;
 void setup() {
   Serial.begin(9600);
   strip.begin();
+  strip.setBrightness(15);
   strip.show(); // Start with all pixels off
   delay(pause);
 }
