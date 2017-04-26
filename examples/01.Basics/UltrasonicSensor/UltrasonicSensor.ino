@@ -1,5 +1,5 @@
 #define echoPin D7 // Echo Pin
-#define trigPin D6 // Trigger Pin
+#define trigPin D5 // Trigger Pin
  
 double distInCm; 
  
