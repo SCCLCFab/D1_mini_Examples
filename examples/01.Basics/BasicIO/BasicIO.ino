@@ -2,7 +2,8 @@
  * Basic IO
  * Use a pushbutton to toggle the onboard LED.
  *
- * If you do not have the 1 Button Shield, add a pushbutton or switch between D3 and GND
+ * Add a pushbutton or switch between D3 and GND. D3 and D4 have built-in
+ * pullup resistors needed to make this work.
  */
 
 int inputPin = D2;  // pushbutton connected to digital pin D2
