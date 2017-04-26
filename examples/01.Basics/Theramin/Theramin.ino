@@ -2,8 +2,8 @@
 Adafruit Arduino - Lesson 10. Pseudo Thermin
 */
  
-int speakerPin = 12; /* D6 */
-int photocellPin = 0;
+int speakerPin = D6;
+int photocellPin = A0;
  
 void setup()
 {
