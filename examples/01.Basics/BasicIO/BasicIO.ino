@@ -6,7 +6,7 @@
  * pullup resistors needed to make this work.
  */
 
-int inputPin = D7;  // pushbutton connected to digital pin D3
+int inputPin = D3;  // pushbutton connected to digital pin D3
 int val = 0;        // variable to store the read value
 
 void setup() {
