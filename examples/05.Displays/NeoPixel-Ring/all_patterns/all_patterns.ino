@@ -19,7 +19,7 @@
 #include <Adafruit_NeoPixel.h>
 
 // NeoPixel ring DIN pin
-#define DIN_PIN D2
+#define DIN_PIN D5
 
 // How many NeoPixels on the ring?
 #define NUM_PIXELS 12

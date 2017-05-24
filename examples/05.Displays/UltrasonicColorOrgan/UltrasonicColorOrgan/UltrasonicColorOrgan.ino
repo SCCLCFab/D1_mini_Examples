@@ -9,7 +9,8 @@ Connect microphone out to A0
 #define echoPin D7 // Echo Pin
 #define trigPin D5 // Trigger Pin
 #define LED_PIN   D2  // NeoPixel LED strand is connected to D2
-#define MAX_DISTANCE 50 // cm, measurement gets noisy after that
+#define MAX_DISTANCE 200 // cm, measurement gets noisy after that
+#define MAX_HEIGHT N_PIXELS + 1
 
 double distInCm;
 double height;
@@ -32,7 +33,7 @@ void loop()
   Serial.println(" cm.");
 
    // Now turn distance into color
-   height = (N_PIXELS + 1) * distInCm / (long)MAX_DISTANCE;
+   height = MAX_HEIGHT - (MAX_HEIGHT) * distInCm / (long)MAX_DISTANCE;
    Serial.print("height ");
    Serial.println(height);
    // Color pixels based on rainbow gradient
